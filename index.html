@@ -8,13 +8,15 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <title>WEBSTUDIO website</title>
   </head>
   <body>
@@ -32,6 +34,12 @@
             <li><a href="" class="menu">Contacts</a></li>
           </ul>
         </nav>
+        <button class="open-menu-btn">
+          <svg class="icon icon-menu" width="24" height="24">
+            <use href="./images/icons.svg.svg#icon-menu"></use>
+          </svg>
+        </button>
+
         <address class="address-class">
           <ul class="address-list">
             <li>
@@ -50,9 +58,7 @@
       <section class="section hero-image">
         <div class="container">
           <div class="content">
-            <h1 class="page-title">
-              Effective Solutions <br />for Your Business
-            </h1>
+            <h1 class="page-title">Effective Solutions for Your Business</h1>
             <button type="button" class="order-button">Order Service</button>
           </div>
         </div>
@@ -120,13 +126,13 @@
 
       <section class="section section-two">
         <div class="container">
-          <h2 class="sectiono-title">Our Team</h2>
+          <h2 class="section-title">Our Team</h2>
           <ul class="team-cards">
             <li class="card">
               <img src="./images/face-1.jpg" alt="Mark Guerrero" width="264" />
               <div class="worker">
-                <h3 class="section-title">Mark Guerrero</h3>
-                <p class="section-text">Product Designer</p>
+                <h3 class="card-title">Mark Guerrero</h3>
+                <p class="card-text">Product Designer</p>
 
                 <ul class="media-list">
                   <li class="media-list-item">
@@ -168,8 +174,8 @@
             <li class="card">
               <img src="./images/face-2.jpg" alt="Tom Ford" width="264" />
               <div class="worker">
-                <h3 class="section-title">Tom Ford</h3>
-                <p class="section-text">Frontend Developer</p>
+                <h3 class="card-title">Tom Ford</h3>
+                <p class="card-text">Frontend Developer</p>
 
                 <ul class="media-list">
                   <li class="media-list-item">
@@ -211,8 +217,8 @@
             <li class="card">
               <img src="./images/face-3.jpg" alt="Camila Garcia" width="264" />
               <div class="worker">
-                <h3 class="section-title">Camila Garcia</h3>
-                <p class="section-text">Marketing</p>
+                <h3 class="card-title">Camila Garcia</h3>
+                <p class="card-text">Marketing</p>
                 <ul class="media-list">
                   <li class="media-list-item">
                     <a href="" class="media-list-link">
@@ -253,8 +259,8 @@
             <li class="card">
               <img src="./images/face-4.jpg" alt="Daniel Wilson" width="264" />
               <div class="worker">
-                <h3 class="section-title">Daniel Wilson</h3>
-                <p class="section-text">UI Designer</p>
+                <h3 class="card-title">Daniel Wilson</h3>
+                <p class="card-text">UI Designer</p>
                 <ul class="media-list">
                   <li class="media-list-item">
                     <a href="" class="media-list-link">
@@ -297,13 +303,20 @@
 
       <section id="our-portfolio" class="section section-three">
         <div class="container">
-          <h2 class="sectiono-title">Our Portfolio</h2>
+          <h2 class="section-title">Our Portfolio</h2>
 
           <ul class="portfolio-cards">
             <li class="card">
               <div class="card-image">
                 <img
-                  src="./images/banking-app.jpg"
+                  srcset="
+                    ./images/banking-app.jpg 360w
+                    ./images/banking-app-tablet.jpg 356w,
+                    ./images/banking-app-mobile.jpg 288w
+                    
+                  "
+                  sizes="(min-width:1158px) 360px, (min-width:768px) 356px, (min-width:320px) 288px"
+                  src="./images/banking-app-mobile.jpg"
                   alt="Banking app picture"
                   width="360"
                   height="300"
@@ -315,15 +328,22 @@
                 </p>
               </div>
               <div class="project">
-                <h3 class="section-title">Banking App</h3>
-                <p class="section-text">App</p>
+                <h3 class="card-title">Banking App</h3>
+                <p class="card-text">App</p>
               </div>
             </li>
 
             <li class="card">
               <div class="card-image">
                 <img
-                  src="./images/cashless-payment.jpg"
+                  srcset="
+                    ./images/cashless-payment.jpg 360w
+                    ./images/cashless-payment-tablet.jpg 356w,
+                    ./images/cashless-payment-mobile.jpg 288w
+                    
+                  "
+                  sizes="(min-width:1158px) 360px, (min-width:768px) 356px, (min-width:320px) 288px"
+                  src="./images/cashless-payment-mobile.jpg"
                   alt="Cashless payment picture"
                   width="360"
                   height="300"
@@ -336,15 +356,22 @@
                 </p>
               </div>
               <div class="project">
-                <h3 class="section-title">Cashless Payment</h3>
-                <p class="section-text">Marketing</p>
+                <h3 class="card-title">Cashless Payment</h3>
+                <p class="card-text">Marketing</p>
               </div>
             </li>
 
             <li class="card">
               <div class="card-image">
                 <img
-                  src="./images/meditation-app.jpg"
+                  srcset="
+                    ./images/meditation-app.jpg 360w
+                    ./images/meditation-app-tablet.jpg 356w,
+                    ./images/meditation-app-mobile.jpg 288w
+                    
+                  "
+                  sizes="(min-width:1158px) 360px, (min-width:768px) 356px, (min-width:320px) 288px"
+                  src="./images/meditation-app-mobile.jpg"
                   alt="Meditation app picture"
                   width="360"
                   height="300"
@@ -357,15 +384,22 @@
                 </p>
               </div>
               <div class="project">
-                <h3 class="section-title">Meditation App</h3>
-                <p class="section-text">App</p>
+                <h3 class="card-title">Meditation App</h3>
+                <p class="card-text">App</p>
               </div>
             </li>
 
             <li class="card">
               <div class="card-image">
                 <img
-                  src="./images/taxi-service.jpg"
+                  srcset="
+                    ./images/taxi-service.jpg 360w
+                    ./images/taxi-service-tablet.jpg 356w,
+                    ./images/taxi-service-mobile.jpg 288w
+                    
+                  "
+                  sizes="(min-width:1158px) 360px, (min-width:768px) 356px, (min-width:320px) 288px"
+                  src="./images/taxi-service-mobile.jpg"
                   alt="Taxi service picture"
                   width="360"
                   height="300"
@@ -378,15 +412,22 @@
                 </p>
               </div>
               <div class="project">
-                <h3 class="section-title">Taxi Service</h3>
-                <p class="section-text">Marketing</p>
+                <h3 class="card-title">Taxi Service</h3>
+                <p class="card-text">Marketing</p>
               </div>
             </li>
 
             <li class="card">
               <div class="card-image">
                 <img
-                  src="./images/screen-illustrations.jpg"
+                  srcset="
+                    ./images/screen-illustrations.jpg 360w
+                    ./images/screen-illustrations-tablet.jpg 356w,
+                    ./images/screen-illustrations-mobile.jpg 288w
+                    
+                  "
+                  sizes="(min-width:1158px) 360px, (min-width:768px) 356px, (min-width:320px) 288px"
+                  src="./images/screen-illustrations-mobile.jpg"
                   alt="Screen illustrations picture"
                   width="360"
                   height="300"
@@ -399,15 +440,21 @@
                 </p>
               </div>
               <div class="project">
-                <h3 class="section-title">Screen Illustrations</h3>
-                <p class="section-text">Design</p>
+                <h3 class="card-title">Screen Illustrations</h3>
+                <p class="card-text">Design</p>
               </div>
             </li>
 
             <li class="card">
               <div class="card-image">
                 <img
-                  src="./images/online-courses.jpg"
+                  srcset="
+                    ./images/online-courses-mobile.jpg 288w,
+                    ./images/online-courses-tablet.jpg 356w,
+                    ./images/online-courses.jpg        360w
+                  "
+                  sizes="(min-width:320px) 288px,(min-width:768px) 356px,(min-width:1158px) 360px"
+                  src="./images/online-courses-mobile.jpg"
                   alt="Online Courses picture"
                   width="360"
                   height="300"
@@ -420,8 +467,8 @@
                 </p>
               </div>
               <div class="project">
-                <h3 class="section-title">Online Courses</h3>
-                <p class="section-text">Marketing</p>
+                <h3 class="card-title">Online Courses</h3>
+                <p class="card-text">Marketing</p>
               </div>
             </li>
           </ul>
@@ -476,13 +523,14 @@
         <div class="footer-part-three">
           <p class="label-text">Subscribe</p>
           <form class="footer-form">
-            <label class="subscribe-label">
-              <input
-                type="email"
-                name="subscribe-email"
-                placeholder="E-mail"
-                class="subscribe-input"
-            /></label>
+            <label class="subscribe-label" for="subscribe-email"></label>
+            <input
+              type="email"
+              name="subscribe-email"
+              placeholder="E-mail"
+              class="subscribe-input"
+              id="subscribe-email"
+            />
             <button type="submit" class="footer-form-button">
               Subscribe
               <svg class="icon icon-telegram-form" width="24" height="24">
@@ -547,7 +595,7 @@
             </div>
           </div>
           <div class="user-input-comment">
-            <label class="form-label" for="user-comment">Comment </label>
+            <label class="form-label" for="user-comment">Comment</label>
             <textarea
               id="user-comment"
               name="user-comment"
@@ -570,13 +618,73 @@
                   <use href="./images/icons.svg.svg#icon-check-box"></use>
                 </svg>
               </span>
-
-              I accept the terms and conditions of the
-              <a href="" class="private-policy-text">Privacy Policy</a>
+              <div>
+                I accept the terms and conditions of the
+                <a href="" class="private-policy-text">Privacy Policy</a>
+              </div>
             </label>
           </div>
           <button type="submit" class="form-button">Send</button>
         </form>
+      </div>
+    </div>
+
+    <!-- mobile-menu -->
+    <div class="mobile-menu">
+      <button class="close-menu-btn">
+        <svg class="close-icon" width="8" height="8">
+          <use href="./images/icons.svg.svg#icon-close"></use>
+        </svg>
+      </button>
+      <div class="container">
+        <ul class="menu-list-mobile">
+          <li>
+            <a href="./index.html" class="menu current">Studio</a>
+          </li>
+          <li><a href="#our-portfolio" class="menu">Portfolio</a></li>
+          <li><a href="" class="menu">Contacts</a></li>
+        </ul>
+
+        <address class="address-class-mobile">
+          <ul class="address-list">
+            <li class="address-list-item">
+              <a href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li>
+              <a href="mailto:info@devstudio.com" class="info"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="media-list-menu">
+            <li class="media-list-menu-item">
+              <a href="" class="media-list-menu-link">
+                <svg class="icon-media" width="24" height="24">
+                  <use
+                    href="./images/icons.svg.svg#icon-instagram-2"
+                  ></use></svg
+              ></a>
+            </li>
+            <li class="media-list-menu-item">
+              <a href="" class="media-list-menu-link"
+                ><svg class="icon-media" width="24" height="24">
+                  <use href="./images/icons.svg.svg#icon-twitter-1"></use></svg
+              ></a>
+            </li>
+            <li class="media-list-menu-item">
+              <a href="" class="media-list-menu-link"
+                ><svg class="icon-media" width="24" height="24">
+                  <use href="./images/icons.svg.svg#icon-facebook-1"></use></svg
+              ></a>
+            </li>
+            <li class="media-list-menu-item">
+              <a href="" class="media-list-menu-link">
+                <svg class="icon-media" width="24" height="24">
+                  <use href="./images/icons.svg.svg#icon-linkedin-1"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </address>
       </div>
     </div>
   </body>
