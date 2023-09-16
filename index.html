@@ -129,7 +129,12 @@
           <h2 class="section-title">Our Team</h2>
           <ul class="team-cards">
             <li class="card">
-              <img src="./images/face-1.jpg" alt="Mark Guerrero" width="264" />
+              <img
+                srcset="./images/face-1@2x.jpg 2x"
+                src="./images/face-1.jpg"
+                alt="Mark Guerrero"
+                width="264"
+              />
               <div class="worker">
                 <h3 class="card-title">Mark Guerrero</h3>
                 <p class="card-text">Product Designer</p>
@@ -172,7 +177,12 @@
             </li>
 
             <li class="card">
-              <img src="./images/face-2.jpg" alt="Tom Ford" width="264" />
+              <img
+                srcset="./images/face-2@2x.jpg 2x"
+                src="./images/face-2.jpg"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="worker">
                 <h3 class="card-title">Tom Ford</h3>
                 <p class="card-text">Frontend Developer</p>
@@ -215,7 +225,12 @@
             </li>
 
             <li class="card">
-              <img src="./images/face-3.jpg" alt="Camila Garcia" width="264" />
+              <img
+                srcset="./images/face-3@2x.jpg 2x"
+                src="./images/face-3.jpg"
+                alt="Camila Garcia"
+                width="264"
+              />
               <div class="worker">
                 <h3 class="card-title">Camila Garcia</h3>
                 <p class="card-text">Marketing</p>
@@ -257,7 +272,12 @@
             </li>
 
             <li class="card">
-              <img src="./images/face-4.jpg" alt="Daniel Wilson" width="264" />
+              <img
+                srcset="./images/face-4@2x.jpg 2x"
+                src="./images/face-4.jpg"
+                alt="Daniel Wilson"
+                width="264"
+              />
               <div class="worker">
                 <h3 class="card-title">Daniel Wilson</h3>
                 <p class="card-text">UI Designer</p>
@@ -310,16 +330,16 @@
               <div class="card-image">
                 <img
                   srcset="
-                    ./images/banking-app.jpg 360w
-                    ./images/banking-app-tablet.jpg 356w,
-                    ./images/banking-app-mobile.jpg 288w
-                    
+                    ./images/banking-app.jpg           360w,
+                    ./images/banking-app@2x.jpg        720w,
+                    ./images/banking-app-tablet.jpg    356w,
+                    ./images/banking-app-tablet@2x.jpg 712w,
+                    ./images/banking-app-mobile.jpg    288w,
+                    /images/banking-app-mobile@2x.jpg  576w
                   "
-                  sizes="(min-width:1158px) 360px, (min-width:768px) 356px, (min-width:320px) 288px"
+                  sizes="(min-width:1158px) 360px,(min-width:768px) 356px, (max-width:767px) 288px"
                   src="./images/banking-app-mobile.jpg"
                   alt="Banking app picture"
-                  width="360"
-                  height="300"
                 />
                 <p class="overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -337,16 +357,16 @@
               <div class="card-image">
                 <img
                   srcset="
-                    ./images/cashless-payment.jpg 360w
-                    ./images/cashless-payment-tablet.jpg 356w,
-                    ./images/cashless-payment-mobile.jpg 288w
-                    
+                    ./images/cashless-payment.jpg           360w,
+                    ./images/cashless-payment@2x.jpg        720w,
+                    ./images/cashless-payment-tablet.jpg    356w,
+                    ./images/cashless-payment-tablet@2x.jpg 712w,
+                    ./images/cashless-payment-mobile.jpg    288w,
+                    ./images/cashless-payment-mobile@2x.jpg 576w
                   "
-                  sizes="(min-width:1158px) 360px, (min-width:768px) 356px, (min-width:320px) 288px"
+                  sizes="(min-width:1158px) 360px, (min-width:768px) 356px, (max-width:767px) 288px"
                   src="./images/cashless-payment-mobile.jpg"
                   alt="Cashless payment picture"
-                  width="360"
-                  height="300"
                 />
 
                 <p class="overlay-text">
@@ -365,12 +385,14 @@
               <div class="card-image">
                 <img
                   srcset="
-                    ./images/meditation-app.jpg 360w
-                    ./images/meditation-app-tablet.jpg 356w,
-                    ./images/meditation-app-mobile.jpg 288w
-                    
+                    ./images/meditation-app.jpg           360w,
+                    ./images/meditation-app@2x.jpg        720w,
+                    ./images/meditation-app-tablet.jpg    356w,
+                    ./images/meditation-app-tablet@2x.jpg 712w,
+                    ./images/meditation-app-mobile.jpg    288w,
+                    ./images/meditation-app-mobile@2x.jpg 576w
                   "
-                  sizes="(min-width:1158px) 360px, (min-width:768px) 356px, (min-width:320px) 288px"
+                  sizes="(min-width:1158px) 360px, (min-width:768px) 356px, (max-width:767px) 288px"
                   src="./images/meditation-app-mobile.jpg"
                   alt="Meditation app picture"
                   width="360"
@@ -393,12 +415,14 @@
               <div class="card-image">
                 <img
                   srcset="
-                    ./images/taxi-service.jpg 360w
-                    ./images/taxi-service-tablet.jpg 356w,
-                    ./images/taxi-service-mobile.jpg 288w
-                    
+                    ./images/taxi-service.jpg           360w,
+                    ./images/taxi-service@2x.jpg        720w,
+                    ./images/taxi-service-tablet.jpg    356w,
+                    ./images/taxi-service-tablet@2x.jpg 712w,
+                    ./images/taxi-service-mobile.jpg    288w,
+                    ./images/taxi-service-mobile@2x.jpg 576w
                   "
-                  sizes="(min-width:1158px) 360px, (min-width:768px) 356px, (min-width:320px) 288px"
+                  sizes="(min-width:1158px) 360px, (min-width:768px) 356px, (max-width:767px) 288px"
                   src="./images/taxi-service-mobile.jpg"
                   alt="Taxi service picture"
                   width="360"
@@ -421,12 +445,14 @@
               <div class="card-image">
                 <img
                   srcset="
-                    ./images/screen-illustrations.jpg 360w
-                    ./images/screen-illustrations-tablet.jpg 356w,
-                    ./images/screen-illustrations-mobile.jpg 288w
-                    
+                    ./images/screen-illustrations.jpg           360w,
+                    ./images/screen-illustrations@2x.jpg        720w,
+                    ./images/screen-illustrations-tablet.jpg    356w,
+                    ./images/screen-illustrations-tablet@2x.jpg 712w,
+                    ./images/screen-illustrations-mobile.jpg    288w,
+                    ./images/screen-illustrations-mobile@2x.jpg 576w
                   "
-                  sizes="(min-width:1158px) 360px, (min-width:768px) 356px, (min-width:320px) 288px"
+                  sizes="(min-width:1158px) 360px, (min-width:768px) 356px, (max-width:767px) 288px"
                   src="./images/screen-illustrations-mobile.jpg"
                   alt="Screen illustrations picture"
                   width="360"
@@ -449,11 +475,14 @@
               <div class="card-image">
                 <img
                   srcset="
-                    ./images/online-courses-mobile.jpg 288w,
-                    ./images/online-courses-tablet.jpg 356w,
-                    ./images/online-courses.jpg        360w
+                    ./images/online-courses.jpg           360w,
+                    ./images/online-courses@2x.jpg        720w,
+                    ./images/online-courses-tablet.jpg    356w,
+                    ./images/online-courses-tablet@2x.jpg 712w,
+                    ./images/online-courses-mobile.jpg    288w,
+                    ./images/online-courses-mobile@2x.jpg 576w
                   "
-                  sizes="(min-width:320px) 288px,(min-width:768px) 356px,(min-width:1158px) 360px"
+                  sizes="(min-width:1158px) 360px,(min-width:768px) 356px,(max-width:767px) 288px"
                   src="./images/online-courses-mobile.jpg"
                   alt="Online Courses picture"
                   width="360"
@@ -542,7 +571,7 @@
       </div>
     </footer>
     <!-- контейнера для модального вікна -->
-    <div class="modal-backdrop">
+    <div class="modal-backdrop is-open">
       <!-- модальне вікно -->
       <div class="my-form">
         <button class="close-btn" type="button">
@@ -618,10 +647,10 @@
                   <use href="./images/icons.svg.svg#icon-check-box"></use>
                 </svg>
               </span>
-              <div>
+              <span>
                 I accept the terms and conditions of the
                 <a href="" class="private-policy-text">Privacy Policy</a>
-              </div>
+              </span>
             </label>
           </div>
           <button type="submit" class="form-button">Send</button>
@@ -689,6 +718,3 @@
     </div>
   </body>
 </html>
-<!-- <svg class="icon icon-benefits" width="64" height="64">
-                  <use href="./images/icons.svg.svg#icon-clock"></use>
-                </svg> -->

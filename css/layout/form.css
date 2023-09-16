@@ -175,9 +175,11 @@
 }
 .label-checkbox {
   display: flex;
+  gap: 8px;
+  align-items: center;
 }
 .span-checkbox {
-  width: 16px;
+  min-width: 16px;
   height: 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   fill: transparent;
@@ -188,7 +190,6 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-right: 8px;
 }
 
 .check-box:checked + .label-checkbox > .span-checkbox {
